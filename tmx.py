@@ -1,8 +1,10 @@
 # "Tiled" TMX loader/renderer and more
 # Copyright 2012 Richard Jones <richard@mechanicalcat.net>
 # This code is placed in the Public Domain.
-
-# TODO: support properties on more things
+# 
+# Changes (July 2013 by Renfred Harper):
+# Ported to Python 3
+# Added selective area support SpriteLayer.draw
 
 import sys
 import struct
