@@ -12,6 +12,8 @@ import pygame
 from pygame.locals import *
 from pygame import Rect
 from xml.etree import ElementTree
+from base64 import b64decode
+from zlib import decompress
 
 
 class Tile(object):
@@ -254,7 +256,9 @@ class Layer(object):
 			raise ValueError('layer %s does not contain <data>' % layer.name)
 
 		data = data.text.strip()
-		data = data.decode('base64').decode('zlib')
+		data = data.encode() # Convert to bytes
+		# Decode from base 64 and decompress via zlib 
+		data = decompress(b64decode(data)) 
 		data = struct.unpack('<%di' % (len(data)/4,), data)
 		assert len(data) == layer.width * layer.height
 		for i, gid in enumerate(data):
