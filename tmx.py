@@ -88,8 +88,8 @@ class Tileset(object):
 		if not image:
 			sys.exit("Error creating new Tileset: file %s not found" % file)
 		id = self.firstgid
-		for line in xrange(image.get_height() / self.tile_height):
-			for column in xrange(image.get_width() / self.tile_width):
+		for line in range(image.get_height() / self.tile_height):
+			for column in range(image.get_width() / self.tile_width):
 				pos = Rect(column * self.tile_width, line * self.tile_height,
 					self.tile_width, self.tile_height)
 				self.tiles.append(Tile(id, image.subsurface(pos), self))
@@ -182,7 +182,7 @@ class LayerIterator(object):
 		self.layer = layer
 		self.i, self.j = 0, 0
 
-	def next(self):
+	def __next__(self):
 		if self.i == self.layer.width - 1:
 			self.j += 1
 			self.i = 0
@@ -293,7 +293,7 @@ class Layer(object):
 		'''
 		r = []
 		for propname in properties:
-			for cell in self.cells.values():
+			for cell in list(self.cells.values()):
 				if cell and propname in cell:
 					r.append(cell)
 		return r
@@ -303,7 +303,7 @@ class Layer(object):
 		'''
 		r = []
 		for propname in properties:
-			for cell in self.cells.values():
+			for cell in list(self.cells.values()):
 				if propname not in cell:
 					continue
 				if properties[propname] == cell[propname]:
@@ -793,7 +793,7 @@ class TileMap(object):
 		# therefore also its children).
 		# The result is that all chilren will have their viewport set, defining
 		# which of their pixels should be visible.
-		self.fx, self.fy = map(int, (fx, fy))
+		self.fx, self.fy = list(map(int, (fx, fy)))
 		self.fx, self.fy = fx, fy
 
 		# get our view size
