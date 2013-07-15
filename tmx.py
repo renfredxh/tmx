@@ -633,9 +633,14 @@ class SpriteLayer(pygame.sprite.AbstractGroup):
 	def draw(self, screen):
 		ox, oy = self.position
 		w, h = self.view_w, self.view_h
+		
 		for sprite in self.sprites():
 			sx, sy = sprite.rect.topleft
-			screen.blit(sprite.image, (sx-ox, sy-oy))
+			# Only the sprite's defined width and height will be drawn
+			area = pygame.Rect((0, 0),
+							   (sprite.rect.width,
+							   	sprite.rect.height))
+			screen.blit(sprite.image, (sx-ox, sy-oy), area)
 
 class Layers(list):
 	def __init__(self):
