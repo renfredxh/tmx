@@ -626,6 +626,8 @@ class SpriteLayer(pygame.sprite.AbstractGroup):
 		self.view_w, self.view_h = w, h
 		x -= viewport_ox
 		y -= viewport_oy
+		self.dx = viewport_ox
+		self.dy = viewport_oy
 		self.position = (x, y)
 
 	def draw(self, screen):
