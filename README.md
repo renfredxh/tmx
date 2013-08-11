@@ -14,13 +14,11 @@ Installiation of the [pygame](http://www.pygame.org/install.html) and any versio
 
 Below is a short annoted example that contains the bare minimum amount of code to get a tmx map up and running. Feel free to copy and paste it to play around with it or use it to learn more about each method.
 
-Annotated sample:
-
 ```python
 import pygame
 import tmx
 
-# Initialize pygame and create a 500x500 display 
+# Initialize pygame and create a 500x500 display.
 pygame.init()
 screen = pygame.display.set_mode((500 , 500))
 
@@ -44,9 +42,9 @@ while 1:
     
     # tilemap.update calls the update method on each layer in the map.
     # The update method can be customized for each layer to include logic
-    # for animating sprite positions, and detecting collisions .              
+    # for animating sprite positions, and detecting collisions.              
     tilemap.update(dt)
-    # Fill the screen with an R,G,B color to erase the previous drawings
+    # Fill the screen with an R,G,B color to erase the previous drawings.
     screen.fill((0,0,0))
     # Draw all layers of the tilemap to the screen.
     tilemap.draw(screen)
