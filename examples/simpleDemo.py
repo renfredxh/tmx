@@ -1,4 +1,4 @@
-# Demo written by Renfred Harper
+# Demo written by RenfredH04
 exec(open("importer.py").read()) # Add tmx to path (ignore this)
 
 import pygame
