@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="50" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" source="tiles.tsx"/>
+ <tileset firstgid="2" source="triggers.tsx"/>
+ <layer name="set" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztlkEOgCAQA+H/n/a8B2OCQEeZSTg2WFsbe2ut/+R8HX2w0AeLE32Qd472PKPoo+rTXTMPFu4VC31Ufbpr5sHCvWKhj6pPd808WLhXLPRR9emumQcL94qFPqr+qWurO2keLFZmvGvXiPs5ij6qPp2tebB4+3/1dHZxYh5k7nyMdCj5PtL3zyL1Pc7Oc7Q/xHMBpUQBKg==
+  </data>
+ </layer>
+ <objectgroup color="#a40b00" name="triggers" width="50" height="50" visible="0">
+  <properties>
+   <property name="platform" value=""/>
+  </properties>
+  <object name="tlrb" x="0" y="32" width="32" height="1536">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object name="tlrb" x="1568" y="32" width="32" height="1536">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object name="tlrb" x="32" y="0" width="1536" height="32">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object name="tlrb" x="32" y="1568" width="1536" height="32">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object name="platform" x="320" y="224" width="160" height="32">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object name="platform" x="480" y="320" width="160" height="32">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object name="platform" x="320" y="416" width="160" height="32">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object name="platform" x="480" y="512" width="160" height="32">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object name="platform" x="320" y="608" width="160" height="32">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object name="platform" x="480" y="704" width="160" height="32">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object name="platform" x="320" y="800" width="160" height="32">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object name="platform" x="480" y="896" width="160" height="32">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object name="platform" x="320" y="992" width="160" height="32">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object name="platform" x="480" y="1088" width="160" height="32">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object name="platform" x="800" y="1088" width="160" height="32">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object name="platform" x="638" y="1183" width="163" height="33">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object name="platform" x="479" y="1279" width="160" height="33">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object name="platform" x="320" y="1376" width="416" height="32">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object name="platform" x="160" y="1472" width="448" height="32">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object name="tlrb" x="864" y="1536" width="256" height="32">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object name="tlrb" x="1536" y="1184" width="32" height="32">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object gid="2" x="64" y="1536"/>
+  <object gid="3" x="480" y="1472"/>
+  <object gid="3" x="608" y="1376"/>
+  <object gid="3" x="352" y="1376"/>
+  <object gid="3" x="224" y="1472"/>
+  <object gid="5" x="128" y="1472"/>
+  <object gid="5" x="608" y="1472"/>
+  <object gid="5" x="736" y="1376"/>
+  <object gid="5" x="288" y="1376"/>
+  <object gid="3" x="607" y="1085"/>
+  <object gid="6" x="1239" y="1067"/>
+  <object gid="6" x="1171" y="1091"/>
+  <object gid="6" x="921" y="1068"/>
+  <object gid="6" x="732" y="1380"/>
+  <object gid="6" x="732" y="1380"/>
+  <object gid="6" x="941" y="928"/>
+  <object gid="5" x="960" y="1088"/>
+  <object gid="5" x="449" y="1089"/>
+  <object gid="3" x="865" y="1088"/>
+  <object gid="5" x="677" y="1279"/>
+  <object gid="5" x="451" y="1276"/>
+  <object gid="3" x="543" y="1276"/>
+  <object gid="3" x="397" y="988"/>
+  <object gid="5" x="483" y="991"/>
+  <object gid="5" x="293" y="993"/>
+  <object gid="5" x="637" y="903"/>
+  <object gid="5" x="451" y="901"/>
+  <object gid="3" x="547" y="900"/>
+  <object gid="5" x="36" y="608"/>
+  <object gid="5" x="659" y="604"/>
+  <object gid="3" x="491" y="607"/>
+  <object gid="3" x="267" y="611"/>
+  <object gid="3" x="136" y="611"/>
+  <object gid="3" x="612" y="607"/>
+  <object gid="3" x="431" y="319"/>
+  <object gid="3" x="249" y="375"/>
+  <object gid="3" x="613" y="415"/>
+  <object gid="5" x="653" y="417"/>
+  <object gid="5" x="651" y="383"/>
+  <object gid="5" x="648" y="319"/>
+  <object gid="5" x="204" y="373"/>
+  <object gid="5" x="204" y="324"/>
+  <object gid="5" x="216" y="419"/>
+ </objectgroup>
+</map>
