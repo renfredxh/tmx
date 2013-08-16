@@ -7,6 +7,7 @@ Tmx is a powerful [tmx-based](https://github.com/bjorn/tiled/wiki/TMX-Map-Format
 
 I've decided to fork this so that people that would like to use python 3 to develop tiled based games will have access to compatible tools. If you'd still like to use python 2.x, you can use the [python 2.x branch](https://github.com/RenfredH04/tmx/tree/python2.x).
 There is no offical doumentation for tmx yet, but you can view an example of pratical use of this library in my project, [pylletTown](https://github.com/RenfredH04/pylletTown) along with a [video of it working in action](http://youtu.be/KnOMXyqbxqY).
+Also included is a folder of [various examples](https://github.com/RenfredH04/tmx#running-examples) of different kinds of game to show what the library is capable of. 
 
 Installiation of the [pygame](http://www.pygame.org/install.html) and any version of [python3](http://www.python.org/getit/) is required to use tmx.
 
@@ -51,3 +52,13 @@ while 1:
     # Refresh the display window. 
     pygame.display.flip()
 ```
+
+## Running Examples
+
+Make sure you are in the examples directory, then run the python file of the example you'd like to see.
+
+    $ cd tmx/examples
+    $ python3 simpleDemo.py
+    
+
+
